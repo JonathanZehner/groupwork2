@@ -1,3 +1,4 @@
+/*-- Reset Rule --*/
 * {
 	margin: 0;
 	padding: 0;
@@ -7,3 +8,69 @@
 article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
     display:block;
 }
+/*--******************* Fonts ************************************--*/
+/*-- Google Fonts --*/
+@font-face {
+  font-family: 'stylish';
+  src: url('../fonts/stylish.ttf');
+}
+
+/*-- Adobe Fonts -----/
+    Montserrat added to Adobe Typekit Web fonts
+/--------------------*/
+
+/*--******************* Fonts (end) ******************************--*/
+
+
+/*--******************* Begin Universal Styling ******************--*/
+/*------ Sticky Footer ----------*/
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  font: normal 1rem/1.5 'montserrat', sans-serif;
+  text-align: center;
+}
+
+header footer {
+  flex-shrink: 0;
+}
+/*------- Sticky Footer (end) --*/
+
+h1, h2, h3, h4, h5, h6 {
+  font: normal 1.5rem/1.5 'stylish', serif;
+}
+
+
+
+/*--******************* End Universal Styling ********************--*/
+
+/*--******************* Begin Home Page Styling ******************--*/
+
+
+/*--******************* End Home Page Styling ********************--*/
+
+/*--******************* Begin Busted Page Styling ****************--*/
+
+
+/*--******************* End usted Page Styling *******************--*/
+
+/*--******************* Begin More Info Styling ******************--*/
+
+
+/*--******************* End More Info Styling ********************--*/
+
+/*--******************* Begin Media Queries **********************--*/
+/*-------------- ### Min-Width Media Query (begin) -----------------*/
+
+
+/*-------------- ### Min-Width Media Query (end) -------------------*/
+
+/*-------------- ### Min-Width Media Query (begin) -----------------*/
+
+
+/*-------------- ### Min-Width Media Query (end) -------------------*/
+
+/*--******************* End Media Queries ************************--*/
