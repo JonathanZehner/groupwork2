@@ -201,6 +201,26 @@ footer p {
   padding-bottom: 10px;
 }
 
+.testamonial {
+  margin: 10px auto;
+  max-width: 500px;
+  padding: 5%;
+}
+
+.testamonial h1 {
+  display: none;
+}
+
+.testamonial p {
+  padding: 5px 15px 10px;
+}
+
+.testamonial img {
+  max-width: 300px;
+  padding-top: 25px;
+  width: 90%;
+}
+
 
 /*--******************* End Busted Page Styling ******************--*/
 
