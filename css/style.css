@@ -45,7 +45,7 @@ header footer {
 /*------- Sticky Footer (end) --*/
 
 header img {
-    padding-top: 25px;
+    padding: 25px 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -68,7 +68,7 @@ footer {
   padding: 25px;
 }
 
-footer h3 {
+footer h4 {
   font: normal 1rem/1.5 'montserrat', sans-serif;
 }
 
@@ -166,6 +166,10 @@ footer p {
 /*--******************* End Home Page Styling ********************--*/
 
 /*--******************* Begin Busted Page Styling ****************--*/
+.container h1 {
+  font-size: 3rem;
+}
+
 .busted, .customers {
   background-color: #651b16;
   border: 10px solid #000000;
@@ -215,7 +219,7 @@ footer p {
   padding: 5%;
 }
 
-.testamonial h1 {
+.testamonial h2 {
   display: none;
 }
 
@@ -247,6 +251,10 @@ footer p {
     justify-content: space-around;
   }
 
+  .container h1 {
+    display: none;
+  }
+
   .box {
     height: 90%;
   }
@@ -266,6 +274,7 @@ footer p {
 
   .testamonial {
     order: 3;
+    padding: 0 2%;
   }
 
   .customers {
@@ -273,6 +282,12 @@ footer p {
     order: 2;
     width: 45%;
   }
+
+  .testamonial h2 {
+      display: block;
+      font-size: 3rem;
+  }
+
 /*-- Busted Page Styling (end) ----*/
 
 }
@@ -334,7 +349,6 @@ footer p {
 
   .testamonial {
     order: 2;
-    padding: 0 2%;
     width: 30%;
   }
 
@@ -342,11 +356,6 @@ footer p {
     height: 47%;
     order: 3;
     width: 30%;
-  }
-
-  .testamonial h1 {
-      display: block;
-      font-size: 3rem;
   }
 
   .testamonial img {
