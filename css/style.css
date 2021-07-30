@@ -44,10 +44,32 @@ h1, h2, h3, h4, h5, h6 {
   font: normal 1.5rem/1.5 'stylish', serif;
 }
 
-header {
-  background-color: #000000;
+a {
+  color: white;
+  font: normal 1rem/1.5 'stylish', serif;
   text-decoration: none;
   list-style-type: none;
+}
+
+header, footer {
+  background-color: #000000;
+  color: white;
+}
+
+footer {
+  padding: 25px;
+}
+
+footer h3 {
+  font: normal 1rem/1.5 'montserrat', sans-serif;
+}
+
+footer a {
+  font: bold 1rem/1.5 'montserrat', sans-serif;
+}
+
+footer p {
+  font-size: 0.7rem;
 }
 
 
