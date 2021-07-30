@@ -35,6 +35,10 @@ body {
   text-align: center;
 }
 
+.content {
+  flex-grow: 1;
+}
+
 header footer {
   flex-shrink: 0;
 }
