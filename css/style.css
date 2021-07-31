@@ -374,3 +374,66 @@ footer p {
 /*-------------- 1000 Min-Width Media Query (end) -------------------*/
 
 /*--******************* End Media Queries ************************--*/
+
+/*--******************* Begin Site Animations ********************--*/
+/*-- Header Animation --*/
+.roll-in {
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes roll-in {
+  0% {
+     opacity: 0;
+     -webkit-transform: translateX(-100%) rotate(-120deg);
+  }
+  100% {
+     opacity: 1;
+     -webkit-transform: translateX(0px) rotate(0deg);
+  }
+}
+@keyframes roll-in {
+  0% {
+     opacity: 0;
+     transform: translateX(-100%) rotate(-120deg);
+  }
+  100% {
+     opacity: 1;
+     transform: translateX(0px) rotate(0deg);
+  }
+}
+.roll-in {
+  -webkit-animation-name: roll-in;
+  animation-name: roll-in;
+}
+/*-- Image Animation --*/
+/*!
+ * Hover.css (http://ianlunn.github.io/Hover/)
+ * Version: 2.3.2
+ * Author: Ian Lunn @IanLunn
+ * Author URL: http://ianlunn.co.uk/
+ * Github: https://github.com/IanLunn/Hover
+
+ * Hover.css Copyright Ian Lunn 2017. Generated with Sass.
+ */
+/* 2D TRANSITIONS */
+/* Grow */
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/*--******************* End Site Animations **********************--*/
