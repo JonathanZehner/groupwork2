@@ -335,9 +335,9 @@ footer p {
     width: 97%;
   }
 
-  .box {
+  /* .box {
     height: 90%;
-  }
+  } */
 
   .busted-wrapper {
     display: flex;
@@ -347,7 +347,7 @@ footer p {
   }
 
   .busted {
-    height: 47%;
+    height: 500px;
     width: 30%;
   }
 
@@ -357,7 +357,7 @@ footer p {
   }
 
   .customers {
-    height: 47%;
+    height: 500px;
     order: 3;
     width: 30%;
   }
@@ -372,6 +372,18 @@ footer p {
 
 }
 /*-------------- 1000 Min-Width Media Query (end) -------------------*/
+
+/*-------------- 1100 Min-Width Media Query (begin) -----------------*/
+@media (min-width: 1100px){
+
+/*-- Busted Page Styling (begin) --*/
+  .customers .box img {
+    max-width: 160px;
+  }
+
+/*-- Busted Page Styling (end) ----*/
+}
+/*-------------- 1100 Min-Width Media Query (end) -------------------*/
 
 /*--******************* End Media Queries ************************--*/
 
