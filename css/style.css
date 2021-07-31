@@ -377,6 +377,19 @@ footer p {
 }
 /*-------------- 1100 Min-Width Media Query (end) -------------------*/
 
+/*-------------- 1920 Min-Width Media Query (begin) -----------------*/
+@media (min-width: 1920px){
+
+/*-- Busted Page Styling (begin) --*/
+  .content {
+    margin: auto;
+    max-width: 1920px;
+  }
+
+/*-- Busted Page Styling (end) ----*/
+}
+/*-------------- 1920 Min-Width Media Query (end) -------------------*/
+
 /*--******************* End Media Queries ************************--*/
 
 /*--******************* Begin Site Animations ********************--*/
