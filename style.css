@@ -1,0 +1,456 @@
+/*-- Reset Rule --*/
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+    display:block;
+}
+/*--******************* Fonts ************************************--*/
+/*-- Google Fonts --*/
+@font-face {
+  font-family: 'stylish';
+  src: url('../fonts/stylish.ttf');
+}
+
+/*-- Adobe Fonts -----/
+    Montserrat added to Adobe Typekit Web fonts
+/--------------------*/
+
+/*--******************* Fonts (end) ******************************--*/
+
+
+/*--******************* Begin Universal Styling ******************--*/
+/*------ Sticky Footer ----------*/
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font: normal 1rem/1.5 'montserrat', sans-serif;
+  text-align: center;
+}
+
+.content {
+  flex-grow: 1;
+}
+
+header footer {
+  flex-shrink: 0;
+}
+/*------- Sticky Footer (end) --*/
+
+header img {
+    padding: 25px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font: normal 1.5rem/1.5 'stylish', serif;
+}
+
+a {
+  color: white;
+  font: normal 1rem/1.5 'stylish', serif;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+header, footer {
+  background-color: #000000;
+  color: white;
+}
+
+footer {
+  padding: 25px;
+}
+
+footer h4 {
+  font: normal 1rem/1.5 'montserrat', sans-serif;
+}
+
+footer a {
+  font: bold 1rem/1.5 'montserrat', sans-serif;
+}
+
+footer p {
+  font-size: 0.7rem;
+}
+
+/*-- Hamburger Menu (begin) --*/
+.hamburger{
+  background:none;
+  border:0;
+  color: white;
+  cursor:pointer;
+  font-size:1.4em;
+  font-weight:bold;
+  line-height:45px;
+  outline:none;
+  padding:5px 15px 0px 15px;
+  position:absolute;
+  right:0;
+  z-index:10000000000000;
+}
+
+.cross{
+  background:none;
+  border:0;
+  color: white;
+  cursor:pointer;
+  font-size:3em;
+  font-weight:bold;
+  line-height:65px;
+  outline:none;
+  padding:7px 15px 0px 15px;
+  position:absolute;
+  right:0;
+  z-index:10000000000000;
+}
+
+.menu {
+  background-color: black;
+  position:absolute;
+  text-align:center;
+  width:100%;
+  z-index:1000000;
+}
+
+.menu ul {
+  list-style-image: none;
+  list-style-type: none;
+}
+
+.menu li {
+  border-bottom:#1E2223e3 1px solid;
+  display: block;
+  padding:15px 0 15px 0;
+}
+
+.menu li:hover {
+  background: white;
+  border-bottom:#B7C2C4 1px solid;
+  display: block;
+  padding:15px 0 15px 0;
+}
+
+.menu ul li a {
+  color: white;
+  margin: 0px;
+  text-decoration:none;
+  text-shadow: 1px 1px #00000073;
+}
+
+.menu ul li a:hover {
+  color: black;
+  text-decoration:none;
+}
+/*-- Hamburger Menu (end) --*/
+
+.desktop-nav {
+  display: none;
+}
+
+/*--******************* End Universal Styling ********************--*/
+
+/*--******************* Begin Home Page Styling ******************--*/
+
+
+/*--******************* End Home Page Styling ********************--*/
+
+/*--******************* Begin Busted Page Styling ****************--*/
+.container h1 {
+  font-size: 3rem;
+}
+
+.busted, .customers {
+  background-color: #651b16;
+  border: 10px solid #000000;
+  margin: 25px auto;
+  max-width: 500px;
+  width: 90%;
+}
+
+.box {
+  background-color: #6c6562;
+  border: 1px solid #000000;
+  color: white;
+  margin: 20px auto;
+  text-shadow: 1px 1px 2px #000000;
+  width: 90%;
+}
+
+.flex {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 5px 5%;
+}
+
+.box img {
+  max-width: 400px;
+  width: 45%;
+}
+
+.box p {
+  padding: 0 2%;
+  width: 50%;
+}
+
+.flex:nth-child(5) {
+  padding-bottom: 10px;
+}
+
+.customers .flex:nth-child(4) {
+  padding-bottom: 10px;
+}
+
+.testamonial {
+  margin: 10px auto;
+  max-width: 500px;
+  padding: 5%;
+}
+
+.testamonial h2 {
+  display: none;
+}
+
+.testamonial p {
+  padding: 5px 15px 10px;
+}
+
+.testamonial img {
+  max-width: 300px;
+  padding-top: 25px;
+  width: 90%;
+}
+/*--******************* End Busted Page Styling ******************--*/
+
+/*--******************* Begin More Info Styling ******************--*/
+
+
+/*--******************* End More Info Styling ********************--*/
+
+/*--******************* Begin Media Queries **********************--*/
+/*-------------- 800 Min-Width Media Query (begin) -----------------*/
+@media (min-width: 800px) {
+
+/*-- Busted Page Styling (begin) --*/
+  .container {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+
+  .container h1 {
+    display: none;
+  }
+
+  .box {
+    height: 90%;
+  }
+
+  .busted-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    justify-content: space-around;
+  }
+
+  .busted {
+    height: 40%;
+    order: 1;
+    width: 45%;
+  }
+
+  .testamonial {
+    order: 3;
+    padding: 0 2%;
+  }
+
+  .customers {
+    height: 40%;
+    order: 2;
+    width: 45%;
+  }
+
+  .testamonial h2 {
+      display: block;
+      font-size: 3rem;
+  }
+
+/*-- Busted Page Styling (end) ----*/
+
+}
+/*-------------- 800 Min-Width Media Query (end) -------------------*/
+
+/*-------------- 1000 Min-Width Media Query (begin) -----------------*/
+@media (min-width: 1000px) {
+
+
+/*-- Busted Page Styling (begin) --*/
+
+  .hamburger, .cross, .menu {
+    display: none;
+  }
+
+  header img {
+      padding: 25px 0 0;
+  }
+
+  .desktop-nav {
+    display: block;
+  }
+
+  .desktop-nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+  }
+
+  .desktop-nav ul li {
+    padding: 0 50px 10px;
+    width: 175px;
+  }
+
+  .desktop-nav ul li a {
+    font-size: 2rem;
+  }
+
+  .container {
+    align-items: flex-start;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin: auto;
+    width: 97%;
+  }
+
+  .busted-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    justify-content: space-around;
+  }
+
+  .busted {
+    height: 500px;
+    width: 30%;
+  }
+
+  .testamonial {
+    order: 2;
+    width: 30%;
+  }
+
+  .customers {
+    height: 500px;
+    order: 3;
+    width: 30%;
+  }
+
+  .testamonial img {
+    max-width: 150px;
+    width: 100%;
+  }
+
+
+/*-- Busted Page Styling (end) ----*/
+
+}
+/*-------------- 1000 Min-Width Media Query (end) -------------------*/
+
+/*-------------- 1100 Min-Width Media Query (begin) -----------------*/
+@media (min-width: 1100px){
+
+/*-- Busted Page Styling (begin) --*/
+  .customers .box img {
+    max-width: 160px;
+  }
+
+/*-- Busted Page Styling (end) ----*/
+}
+/*-------------- 1100 Min-Width Media Query (end) -------------------*/
+
+/*-------------- 1920 Min-Width Media Query (begin) -----------------*/
+@media (min-width: 1920px){
+
+/*-- Busted Page Styling (begin) --*/
+  .content {
+    margin: auto;
+    max-width: 1920px;
+  }
+
+/*-- Busted Page Styling (end) ----*/
+}
+/*-------------- 1920 Min-Width Media Query (end) -------------------*/
+
+/*--******************* End Media Queries ************************--*/
+
+/*--******************* Begin Site Animations ********************--*/
+/*-- Header Animation --*/
+.roll-in {
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes roll-in {
+  0% {
+     opacity: 0;
+     -webkit-transform: translateX(-100%) rotate(-120deg);
+  }
+  100% {
+     opacity: 1;
+     -webkit-transform: translateX(0px) rotate(0deg);
+  }
+}
+@keyframes roll-in {
+  0% {
+     opacity: 0;
+     transform: translateX(-100%) rotate(-120deg);
+  }
+  100% {
+     opacity: 1;
+     transform: translateX(0px) rotate(0deg);
+  }
+}
+.roll-in {
+  -webkit-animation-name: roll-in;
+  animation-name: roll-in;
+}
+/*-- Image Animation --*/
+/*!
+ * Hover.css (http://ianlunn.github.io/Hover/)
+ * Version: 2.3.2
+ * Author: Ian Lunn @IanLunn
+ * Author URL: http://ianlunn.co.uk/
+ * Github: https://github.com/IanLunn/Hover
+
+ * Hover.css Copyright Ian Lunn 2017. Generated with Sass.
+ */
+/* 2D TRANSITIONS */
+/* Grow */
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/*--******************* End Site Animations **********************--*/
